@@ -11,74 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Sacramento&display=swap"
         rel="stylesheet">
 
-    <!-- Link to Header CSS -->
+    <!-- Link to Main CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
     <!-- Header Section -->
+    <div id="header-container"></div>
 
+    <!-- Hero Section -->
+    <div id="hero-container"></div>
 
-
-
-    <!-- Hero / Home Section -->
-    <section class="hero-section" id="home">
-        <!-- Canvas for JS Background Particles -->
-        <canvas id="hero-canvas"></canvas>
-
-        <div class="hero-container">
-            <!-- Left Content Area -->
-            <div class="hero-content" id="hero-content">
-                <div class="badge">
-                    <span class="dot"></span> NEXT-GENERATION SECURITY
-                </div>
-
-                <h1 class="hero-title">
-                    Defend Your Digital<br>
-                    <span class="highlight">Assets</span> With<br>
-                    LockHive
-                </h1>
-
-                <p class="hero-description">
-                    Advanced threat detection, seamless integration, and expert protection built for the modern digital
-                    landscape. Secure your future today.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#started" class="btn btn-primary">Get Started &rarr;</a>
-                    <a href="#demo" class="btn btn-secondary">
-                        <span class="play-btn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="8 6 18 12 8 18 8 6"></polygon>
-                            </svg>
-                        </span>
-                        Watch Demo
-                    </a>
-                </div>
-
-                <div class="trust-indicator">
-                    <div class="avatars">
-                        <!-- Simulated avatars with different colors to match image style -->
-                        <div class="avatar" style="background-color: #3f3c56;"></div>
-                        <div class="avatar" style="background-color: #5d3f6a;"></div>
-                        <div class="avatar" style="background-color: #3b504a;"></div>
-                    </div>
-                    <span class="trust-text">Trusted by <strong>10,000+</strong> global companies</span>
-                </div>
-            </div>
-
-            <!-- Right Visual Area -->
-            <div class="hero-visual" id="hero-visual">
-                <div class="shield-container">
-                    <img src="Home/shield.png" alt="LockHive Security Shield" class="shield-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience / About Section -->
     <section class="experience-section" id="experience">
         <div class="experience-container">
             <h2 class="section-title">Chief Information Security Officer</h2>
@@ -161,7 +105,7 @@
 
                 <!-- Right Visual -->
                 <div class="experience-visual">
-                    <img src="Home/cyber_team.png" alt="Cyber Defense Team" class="experience-image">
+                    <img src="./Assets/cyber_team.png" alt="Cyber Defense Team" class="experience-image">
                 </div>
             </div>
 
@@ -314,121 +258,17 @@
         </div>
     </section>
 
-    <!-- My Portfolio Section -->
-    <section class="portfolio-section" id="my-portfolio">
-        <div class="portfolio-container">
-            <div class="portfolio-header">
-                <h2 class="section-title">My Portfolio</h2>
-                <p class="section-desc">I optimize websites for search engines and speed, helping them rank higher on
-                    Google</p>
-            </div>
 
-            <div class="portfolio-grid">
-                <!-- Card 1 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/1.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">AI and Cyber Shield Defense</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio-container"></div>
 
-                <!-- Card 2 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/2.jpg" alt="Portfolio 2">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">Next-Gen Threat Detection</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/3.jpg" alt="Portfolio 3">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">Advanced Network Security</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/4.jpg" alt="Portfolio 4">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">Data Protection Strategies</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/5.jpg" alt="Portfolio 5">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">SEO & Speed Optimization</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/6.jpg" alt="Portfolio 6">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">Blockchain Integrations</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/7.jpg" alt="Portfolio 7">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">Secure Cloud Deployment</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-img-wrapper">
-                        <img src="Assets/8.jpg" alt="Portfolio 8">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 class="portfolio-title">Zero Trust Architecture</h3>
-                        <p class="portfolio-desc">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have..</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Me Section -->
+    <!-- Contact Section -->
     <section class="contact-section scroll-reveal" id="contact">
         <div class="contact-container">
             <div class="contact-card">
                 <!-- Left: Profile Image -->
                 <div class="contact-left">
-                    <img src="Assets/9.jpg" alt="Profile Image" class="contact-image">
+                    <img src="./Assets/9.jpg" alt="Profile Image" class="contact-image">
                 </div>
 
                 <!-- Right: Contact Info -->
@@ -537,7 +377,6 @@
                                 </svg>
                             </a>
                         </div>
-
                         <div class="input-group">
                             <input type="email" placeholder="Email Address" aria-label="Email Address">
                             <button type="button" aria-label="Send message">
@@ -549,25 +388,44 @@
                             </button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-<div id="header-container"></div>
 
-    
     <script>
-        fetch('./Component/heade.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            });   
+        // Load all components and then initialize scripts
+        async function loadAllComponents() {
+            try {
+                const components = [
+                    { id: 'header-container', url: './Component/heade.html' },
+                    { id: 'hero-container', url: './Component/hero.html' },
+                    { id: 'portfolio-container', url: './Component/portfolio.html' },
+                ];
+
+                await Promise.all(components.map(async (comp) => {
+                    const response = await fetch(comp.url);
+                    if (response.ok) {
+                        const html = await response.text();
+                        document.getElementById(comp.id).innerHTML = html;
+                    } else {
+                        console.error(`Failed to load ${comp.url}: ${response.status}`);
+                    }
+                }));
+
+                // Now that elements are in DOM, load and run index.js
+                const script = document.createElement('script');
+                script.src = 'index.js';
+                document.body.appendChild(script);
+            } catch (error) {
+                console.error('Error loading components:', error);
+            }
+        }
+
+        loadAllComponents();
     </script>
-
-    <!-- Script Links -->
-
-    <script src="index.js"></script>
 </body>
 
 </html>
