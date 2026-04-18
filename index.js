@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- 0. Sticky Header on Scroll ---
+    const header = document.getElementById('main-header');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('is-sticky');
+        } else {
+            header.classList.remove('is-sticky');
+        }
+    });
+
     // --- 1. Entry Animations ---
     const heroContent = document.getElementById('hero-content');
     const heroVisual = document.getElementById('hero-visual');
