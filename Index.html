@@ -555,19 +555,14 @@
     </section>
 
 <div id="header-container"></div>
-<div id="hero-container"></div>
+
     
     <script>
         fetch('./Component/heade.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;
-            });
-        fetch('./Component/Hero.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('hero-container').innerHTML = data;
-            });    
+            });   
     </script>
 
     <!-- Script Links -->
