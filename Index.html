@@ -13,6 +13,8 @@
 
     <!-- Link to Main CSS -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="container/header/header.css">
+    <link rel="stylesheet" href="container/hero/hero.css">
 </head>
 
 <body>
@@ -400,8 +402,8 @@
         async function loadAllComponents() {
             try {
                 const components = [
-                    { id: 'header-container', url: './Component/heade.html' },
-                    { id: 'hero-container', url: './Component/hero.html' },
+                    { id: 'header-container', url: './container/header/header.html' },
+                    { id: 'hero-container', url: './container/hero/hero.html' },
                     { id: 'portfolio-container', url: './Component/portfolio.html' },
                 ];
 
@@ -414,6 +416,16 @@
                         console.error(`Failed to load ${comp.url}: ${response.status}`);
                     }
                 }));
+
+                // Load and run header.js after header is in DOM
+                const headerScript = document.createElement('script');
+                headerScript.src = 'container/header/header.js';
+                document.body.appendChild(headerScript);
+
+                // Load and run hero.js after hero is in DOM
+                const heroScript = document.createElement('script');
+                heroScript.src = 'container/hero/hero.js';
+                document.body.appendChild(heroScript);
 
                 // Now that elements are in DOM, load and run index.js
                 const script = document.createElement('script');
